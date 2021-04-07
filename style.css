@@ -14,8 +14,8 @@ Text Domain: xsite.pro
 
 /* Общая стандартная настройка START */
 body, html{
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-family: Panton, sans-serif;
+    font-size: 14px;
     color:#313131;
     margin:0;
     padding:0;
@@ -23,7 +23,7 @@ body, html{
     cursor:default;
     text-align:left;
     min-width: 100%;
-    background:#fff;
+    background: #fff;
 }
 
 input[type="text"],
@@ -62,7 +62,7 @@ textarea{
 }
 select{
     cursor:pointer;
-    background:url(images/select.svg) no-repeat top 50% right 15px;
+    background:url(images/svg/select.svg) no-repeat top 50% right 15px;
     background-size:10px;
 }
 input[type=checkbox]{
@@ -88,7 +88,7 @@ input[type=checkbox] + label:before{
 }
 input[type=checkbox]:checked + label:after{
     position:absolute;
-    background:url(images/checked.svg) no-repeat 50% 50%;
+    background:url(images/svg/checked.svg) no-repeat 50% 50%;
     background-size: contain;
     left: 1px;
     top: -1px;
@@ -98,7 +98,7 @@ input[type=checkbox]:checked + label:after{
     height: 18px;
 }
 a{
-    color:#592cd6;
+    color:#4e9339;
     text-decoration:none;
 }
 a:hover{
@@ -129,7 +129,7 @@ form{
 }
 h1, h2, .title{
     font-weight: normal;
-    font-size:37px;
+    font-size:32px;
     line-height:120%;
     text-align:left;
     text-transform:uppercase;
@@ -173,12 +173,12 @@ i{
     clear:both;
 }
 .btn{
-    background-color: #d02167;
-    color: #fff;
-    border-radius: 50px;
-    cursor: pointer;
     padding: 6px 13px;
     font-size:17px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #4e9339;
+    cursor: pointer;
     line-height: 150%;
     border: 0;
     margin: 0;
@@ -187,19 +187,19 @@ i{
     font-weight:normal;
     text-decoration: none;
     vertical-align: middle;
-    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 .btn:hover{
     background-color: #5f9cd1;
     text-decoration: none;
 }
+}
 .hide{
     display:none
 }
 .container{
     width:100%;
-    max-width:1200px;
+    max-width:1250px;
     margin:0 auto;
     padding:0 15px;
     box-sizing:border-box;
@@ -385,7 +385,7 @@ i{
     margin: auto;
     width: 26px;
     height: 26px;
-    background: url(images/load.svg) no-repeat 50% 50%;
+    background: url(images/svg/load.svg) no-repeat 50% 50%;
     background-size: contain;
     transform: none;
 }
