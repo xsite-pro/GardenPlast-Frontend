@@ -1,0 +1,16 @@
+Если что сайт - http://almimaster.com
+
+
+что нужно сделать:
+
+1) Закинуть эти файлы
+2) в js поменять путь к файлу mail.php
+3) если не нужна проверка телефона в mail.php убрать условие.
+4) Обязательно проставить класс у формы xs_send_form
+
+<input type="submit" name="send" value="Проверить"><br />
+<div class="xs_result"></div>
+
+<input type="hidden" name="send_it" value="y" />
+<input type="hidden" name="xs_theme" value="" />
+<input type="hidden" name="xs_link" value="" />
