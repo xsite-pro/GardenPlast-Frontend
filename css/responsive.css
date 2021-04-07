@@ -158,3 +158,18 @@
 	}
 
 }
+
+@media screen and (max-width:950px){
+	.head-top__slogan {
+		display: none;
+	}
+	.head-top__wrap {
+	    width: 100%;
+	}
+	.head-top__log {
+	    margin-left: 0px;
+	}
+	.head-top__call {
+	    margin-left: 0;
+	}
+}
