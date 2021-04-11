@@ -1824,14 +1824,229 @@ input.subscribe__submit {
 /* Footer END */
 
 /* Page Kategory START */
+.common-index {
+    min-height: 500px;
+    padding-top: 40px;
+}
+.common-index__inner {
+}
+.breadcrumbs {
+}
+.breadcrumbs--dist {
+    margin: 0 0 20px;
+}
+.breadcrumbs__ul {
+    padding: 0;
+    margin: 0;
+}
+.breadcrumbs__item {
+    list-style-type: none;
+    margin: 0 4px 0 0;
+}
+.breadcrumbs__link {
+    color: #bcbcbc;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.breadcrumbs__link span {
+    line-height: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 0 9px 0 0;
+    transition: .2s all;
+}
+.breadcrumbs__link span:hover {
+    color: #4e9339;
+}
+.breadcrumbs__item:last-child .breadcrumbs__link span {
+    padding: 0;
+}
+.breadcrumbs__link span:after {
+    content: "-";
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: auto;
+    right: 0;
+    transform: translateY(-50%);
+}
+.breadcrumbs__item:last-child .breadcrumbs__link span:after {
+    display: none;
+}
+.common-index__title {
+    margin: 0 0 40px;
+}
+.selection {
+}
+.selection--dist {
+    margin: 0 -6px 40px;
+}
+.selection__item {
+    color: #bcbcbc;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    padding: 8px 24px;
+    margin: 6px;
+}
+.selection__item:hover {
+    color: #fff;
+    background-color: #4e9339;
+}
+
+.katalog {
+}
+.katalog--dist {
+}
+.katalog__inner {
+}
+.katalog__sidebar {
+    width: 25%;
+    border: 1px solid #e5e7e4;
+}
+.sb-filter {
+}
+.sb-filter__field {
+}
+.sb-filter__title {
+    padding: 18px 40px;
+    border-bottom: 1px solid #e5e7e4;
+}
+.sb-filter__title-strong {
+}
+.sb-filter__content {
+    padding: 40px;
+}
+.sb-filter__prices {
+}
+.sb-filter__prices-input {
+}
+.sb-filter__price-mover {
+}
+.sb-filter__checker {
+}
+.sb-filter__checker-input {
+}
+.sb-filter__checker-label {
+}
+.sb-filter__content--extand {
+}
+.sb-filter__content-more {
+}
+.sb-filter__wr-reset {
+}
+.sb-filter__reset {
+}
+.sb-questions {
+    background-color: #4e9339;
+}
+.katalog__sb-questions {
+    padding: 40px;
+}
+.sb-questions__inner {
+}
+.sb-questions__title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.sb-questions__pool {
+}
+.sb-questions__input {
+    margin-bottom: 16px;
+}
+.sb-questions__submit {
+    margin-bottom: 16px;
+}
+.sb-questions__agree {
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.7;
+}
+.sb-questions__politic {
+    color: #fff;
+}
+.katalog__content {
+    width: 75%;
+}
+.katalog__sort {
+    padding: 18px 40px;
+    border: 1px solid #e5e7e4;
+    border-left: none;
+}
+.katalog__sort-list {
+}
+.katalog__sort-title {
+    color: #0b0d0a;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+.katalog__sort-name {
+    color: #a0a0a0;
+    font-style: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: .2s all;
+}
+.katalog__sort-name:last-child {
+    margin-right: 0;
+}
+.katalog__sort-name span {
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+.katalog__sort-name span:before,
+.katalog__sort-name span:after {
+    content: "";
+    width: 6px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 6px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: auto;
+    right: 0;
+    margin-top: -2px;
+}
+.katalog__sort-name span:before {
+    background-image: url(images/icons/select-min-gray.svg);
+    opacity: 1;
+}
+.katalog__sort-name span:after {
+    background-image: url(images/icons/select-min-green.svg);
+    opacity: 0;
+}
+.katalog__sort-name:hover {
+    color: #4e9339;
+}
+.katalog__sort-name:hover span:before {
+    opacity: 0;
+}
+.katalog__sort-name:hover span:after {
+    opacity: 1;
+}
+.katalog__sort-name--active {
+    color: #4e9339;
+}
+.katalog__sort-name--active span:before {
+    opacity: 0;
+}
+.katalog__sort-name--active span:after {
+    opacity: 1;
+}
+.katalog__found {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
 
 /* Page Kategory End */
-
-
-
-
-
-
 
 
 
