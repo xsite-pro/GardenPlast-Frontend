@@ -240,7 +240,6 @@ jQuery(function($){
 		});
 	}
 
-
 	// Прикрепление фото к форме
 
     $(document).on('change', '.work__upload-input', function(){
@@ -253,6 +252,110 @@ jQuery(function($){
 			jQuery(this).next('.attache').removeClass('hover').text('Прикрепите фото персонажа')
 		}
     })
+
+    // Main Slider
+    $('.m-slider').slick({
+  		slidesToShow: 1,
+  		slidesToScroll: 1,
+		arrows: true
+	});
+
+    // Advantages Slider
+	$('.advantages__inner').slick({
+  		slidesToShow: 5,
+  		slidesToScroll: 1,
+		arrows: true,
+  		responsive: [
+		{
+		    breakpoint: 1000,
+		    settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1
+			}
+		},
+		{
+		    breakpoint: 800,
+		    settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+			}
+		},
+		{
+		    breakpoint: 550,
+		    settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+			}
+		}]
+	});
+
+	// Advantages Slider
+	$('.news_inner').slick({
+  		slidesToShow: 3,
+  		slidesToScroll: 1,
+		arrows: true,
+  		responsive: [
+		{
+		    breakpoint: 1050,
+		    settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+		    breakpoint: 750,
+		    settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+			}
+		}]
+	});
+
+	// Parrtners Slider
+	$('.partners__inner').slick({
+  		slidesToShow: 5,
+  		slidesToScroll: 1,
+		arrows: true,
+  		responsive: [
+		{
+		    breakpoint: 1050,
+		    settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1
+			}
+		},
+		{
+		    breakpoint: 850,
+		    settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+			}
+		},
+		{
+		    breakpoint: 650,
+		    settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+			}
+		}]
+	});
+
+	// Cities extand
+	$(document).on('click', '.cities__more', function(){
+
+		var menu = $('.cities__ul')
+		if($(menu).hasClass('cities__ul--short')){
+			$(menu).removeClass('cities__ul--short')
+			$(this).text('Скрыть')
+		}
+		else{
+			$(menu).addClass('cities__ul--short')
+			$(this).text('Все города')
+		}
+
+		return false;
+
+	})
 
 })
 	

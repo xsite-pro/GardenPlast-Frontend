@@ -1,3 +1,11 @@
+@media screen and (max-width:1050px){
+	.subscribe__inner {
+	    padding: 25px 30px;
+	}
+	.subscribe__form {
+	    margin-left: 30px;
+	}
+}
 @media screen and (max-width:960px){
 	.buttonMenu{
 		display:block;
@@ -171,5 +179,20 @@
 	}
 	.head-top__call {
 	    margin-left: 0;
+	}
+	.subscribe__form {
+	    width: 60%;
+	}
+}
+
+@media screen and (max-width:650px){
+	.partners__item {
+	    min-height: 138px !important;
+	}
+}
+
+@media screen and (max-width:550px){
+	.advantages__img {
+	    margin: 0 auto;
 	}
 }
