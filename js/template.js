@@ -357,5 +357,35 @@ jQuery(function($){
 
 	})
 
+	// Sidebar dropdown from title
+	$(document).on('click', '.sb-filter__title', function(){
+		menu = $(this).next()
+
+		$(this).toggleClass('sb-filter__title--rotate');
+
+		if($(menu).is(':visible')){
+			$(menu).slideUp(400);
+		}
+		else{
+			$(menu).slideDown(400);
+		}
+
+	})
+
+	// Sidebar dropdown from show-more
+	$(document).on('click', '.sb-filter__content-more span', function(){
+		menu = $(this).parent().prev()
+
+		if($(menu).hasClass('sb-filter__checker--active')){
+			$(menu).removeClass('sb-filter__checker--active');
+			$(this).text('Показать все')
+		}
+		else{
+			$(menu).addClass('sb-filter__checker--active');
+			$(this).text('Скрыть')
+		}
+
+	})
+
 })
 	
