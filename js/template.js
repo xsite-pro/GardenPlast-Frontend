@@ -474,5 +474,45 @@ jQuery(function($){
 		}]
 	});
 
+
+	// Пересчёт количества товара
+    
+	function set_quantity(e)
+	{
+		var c = e.attr('class'),
+			input = e.parents('.numeric').find('input'),
+			v = parseInt(input.val())
+			
+		if(c == 'plus')
+			v++
+		else if(c == 'minus')
+		{
+			v--
+			if(v < 1)
+				v = 1;
+		}
+		
+		if(isNaN(v)) 
+			v = 1
+		
+		input.val(v)
+	} 
+
+	$(document).on('click', '.numeric .plus, .numeric .minus', function()
+	{
+		set_quantity($(this))
+	})
+
+	$(document).on('change', '.numeric input', function()
+	{
+		set_quantity($(this))
+	})
+	
+	$(document).on('keypress', '.numeric input', function(e)
+	{
+		if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57))
+			return false
+	})
+
 })
 	
