@@ -191,6 +191,25 @@
 	}
 }
 
+@media screen and (max-width:600px){
+	.related .slick-slide {
+	     display: block !important; 
+	}
+	.related__image {
+	    width: 100%;
+	}
+	.related__ad-cover {
+	    width: 100%;
+	    padding-bottom: 50px;
+	}
+	.product__action {
+		position: absolute;
+	}
+	.related__content {
+	    padding-top: 0;
+	}
+}
+
 @media screen and (max-width:550px){
 	.advantages__img {
 	    margin: 0 auto;

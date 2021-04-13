@@ -426,5 +426,53 @@ jQuery(function($){
         return false;
     });
 
+    // recommended products
+	$('.recommended__body').slick({
+  		slidesToShow: 4,
+  		slidesToScroll: 1,
+		arrows: true,
+		prevArrow: $('.recommended__arrows .nav-arrows__prev'),
+		nextArrow: $('.recommended__arrows .nav-arrows__next'),
+  		responsive: [
+		{
+		    breakpoint: 1150,
+		    settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+		    breakpoint: 850,
+		    settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+			}
+		},
+		{
+		    breakpoint: 600,
+		    settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+			}
+		}]
+	});
+
+	// Look and buy products
+	$('.related__body').slick({
+  		slidesToShow: 2,
+  		slidesToScroll: 1,
+		arrows: true,
+		prevArrow: $('.related__arrows .nav-arrows__prev'),
+		nextArrow: $('.related__arrows .nav-arrows__next'),
+  		responsive: [
+		{
+		    breakpoint: 1150,
+		    settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}]
+	});
+
 })
 	
