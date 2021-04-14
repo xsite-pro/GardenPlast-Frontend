@@ -358,11 +358,9 @@ jQuery(function($){
 
 	})
 
-	// sidebar dropdown from show-more
-	$(document).on('click', '.p-product__feature-btn', function(){
+	// Сайдбар кнока показать все в фильтре
+	$(document).on('click', '.sb-filter__content-more span', function(){
 		menu = $(this).parent().prev()
-
-		$(this).toggleClass('p-product__feature-btn--rotate')
 
 		if($(menu).hasClass('sb-filter__checker--active')){
 			$(menu).removeClass('sb-filter__checker--active');
@@ -374,7 +372,7 @@ jQuery(function($){
 		}
 	})
 
-	// page product features dropdown
+	// Все характеристики в карточке товара
 	$(document).on('click', '.p-product__feature-btn', function(){
 		menu = $(this).parent().prev()
 
@@ -388,7 +386,7 @@ jQuery(function($){
 		}
 	})
 
-	// page product slider
+	// Слайдер карточки товара
 	$('.xs_slider').slick({
   		slidesToShow: 3,
   		slidesToScroll: 1,
@@ -415,7 +413,7 @@ jQuery(function($){
 		}]
 	});
 
-	// tabs
+	// Табы
 	$(document).on('click', '.p-content__tab-name', function(){
         $('.p-content__tab-name').removeClass('p-content__tab-name--active');
         $(this).addClass('p-content__tab-name--active');
@@ -426,7 +424,7 @@ jQuery(function($){
         return false;
     });
 
-    // recommended products
+    // Слайдер Рекомендуем
 	$('.recommended__body').slick({
   		slidesToShow: 4,
   		slidesToScroll: 1,
@@ -457,7 +455,7 @@ jQuery(function($){
 		}]
 	});
 
-	// Look and buy products
+	// Слайдер Вы смотрели, но забыли купить
 	$('.related__body').slick({
   		slidesToShow: 2,
   		slidesToScroll: 1,
@@ -508,7 +506,15 @@ jQuery(function($){
 		set_quantity($(this))
 	})
 	
+	// запрет ввода букв в корзине
 	$(document).on('keypress', '.numeric input', function(e)
+	{
+		if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57))
+			return false
+	})
+
+	// запрет ввода букв в сайдбаре - цены
+	$(document).on('keypress', '.sb-filter__prices-input', function(e)
 	{
 		if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57))
 			return false
