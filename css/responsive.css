@@ -9,6 +9,10 @@
 @media screen and (max-width:960px){
 	.buttonMenu{
 		display:block;
+		margin-left: auto;
+    	margin-right: 0;
+    	padding-right: 0;
+    	width: 55px;
 	}
 	.show_menu header nav .menu_container {
 		left: 0;
@@ -42,7 +46,7 @@
 	header nav .menu_container .close:before {
 		width: 24px;
 		height: 22px;
-		background: url(../images/close.svg) no-repeat 50% 50%;
+		background: url(../images/icons/close-white.svg) no-repeat 50% 50%;
 		background-size: contain;
 		margin: 16px;
 		z-index: 2;
@@ -163,6 +167,18 @@
 	}
 	header nav .menu_wrapper ul li ul.sub-menu li a{
 	    padding: 15px 25px;
+	}
+	.menu__list {
+	    margin-left: 0;
+	    -webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	}
+	.menu__link {
+	    display: block;
+	}
+	.menu-kat {
+		display: none;
 	}
 
 }

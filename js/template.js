@@ -18,7 +18,7 @@ function tpaneScroll()
 {
 	var $scrollTop = parseInt(jQuery(window).scrollTop()),
 		$scrollPane = jQuery('body'),
-		h=0,
+		h=172,
 		w = parseInt(jQuery(window).width())
 		
 	if($scrollTop > h)
@@ -43,9 +43,9 @@ jQuery(function($){
     jQuery('.gallery-icon a').fancybox({})
 
 	
-	//tpaneScroll()
-	//$(window).resize(function(){tpaneScroll()})
-	//$(document).scroll(function(){tpaneScroll()})
+	tpaneScroll()
+	$(window).resize(function(){tpaneScroll()})
+	$(document).scroll(function(){tpaneScroll()})
 
 	
 	// Маска для телефона
