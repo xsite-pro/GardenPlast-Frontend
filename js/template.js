@@ -520,5 +520,40 @@ jQuery(function($){
 			return false
 	})
 
+
+	// В карточке товара главное изображение слайдером
+	$('.p-product__slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.p-product__carousel',
+        vertical: false,
+        verticalSwiping: false,
+        fade: true
+      });
+
+     $('.p-product__carousel').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.p-product__slider',
+        centerMode: false,
+        focusOnSelect: true,
+        vertical: true,
+        verticalSwiping: false
+      });
+
+ 	//  В адаптиве на главной каталог товаров становится слайдером
+	if( $(window).width() <= 500)
+	{
+		$('.katalog-list__inner').slick({
+	  		slidesToShow: 1,
+	  		slidesToScroll: 1,
+			arrows: true
+		}); 	
+	}
+
+
 })
 	
