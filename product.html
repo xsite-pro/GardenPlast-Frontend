@@ -30,10 +30,10 @@
 						<a class="head-top__phone" href="tel:+78000000000">
 							+7 800 000-00-00
 						</a>
-						<a class="head-top__call fancybox" href="#xs_recall">
+						<a class="head-top__call fancybox" href="#xs_recall" data-button="Заказать звонок">
 							Заказать звонок
 						</a>
-						<div class="head-top__log xs_flex xs_middle xs_center">
+						<div class="burger-checkin head-top__log xs_flex xs_middle xs_center">
 							<a class="head-top__login head-top__log-link" href="#">
 								Войти
 							</a>
@@ -79,30 +79,361 @@
 		</div>
 		<nav class="menu menu--tune">
 			<div class="container">
-				<div class="menu__inner">
-					<ul class="menu__list xs_flex xs_start xs_middle">
-						<li class="menu__item">
-							<a class="menu__link menu__link--catalog" href="#">Каталог товаров</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Компания</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Акции</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Доставка и оплата</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Гарантия и возврат</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Вопросы и ответы</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Контакты</a>
-						</li>
-					</ul>
+				<div class="menu__inner xs_flex xs_middle">
+
+					<!-- Поиск START -->
+					<div class="wr-search wr-search--dist xs_flex">
+		                <span class="icon zoomer search_link" onclick="jQuery('.search_form').addClass('active').find('input[type=text]').focus()">
+		                </span>
+
+		                <form class="search_form form_search" name="searchForm" method="post" action="">
+		                    <input type="submit" class="zoom">
+		                    <input type="hidden" value="product" name="post_type">
+		                    <input type="text" autocomplete="off" placeholder="Введите текст запроса" name="s" id="s" class="your_latters input_search" value="">
+
+		                    <input type="hidden" name="setsearchdata" value="1">
+		                    <input type="hidden" name="category_id" value="" />
+		                    <input type="hidden" name="search_type" value="" />
+		                </form>
+		            </div>
+		            <!-- Поиск END -->
+
+					<div class="buttonMenu"><span></span></div>
+
+					<div class="menu_container">
+						<span class="close"></span>
+						<div class="menu_wrapper">
+							<div class="menu_wrapper_inner">
+
+								<ul class="menu__list xs_flex xs_start xs_middle">
+									<li class="menu__item menu__item--katalog">
+										<a class="menu__link menu__link--katalog" href="#">Каталог товаров</a>
+
+										<div class="menu-kat menu-kat--tune">
+											<div class="menu-kat__item">
+												<div class="menu-kat__image">
+													<img class="menu-kat__img" src="images/pics/catalog_1.jpg" alt="">
+												</div>
+												<div class="menu-kat__col">
+													<a class="menu-kat__tlt" href="#">Садовая мебель</a>
+													<ul class="menu-kat__ul">
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Комплекты садовой мебели
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Столы пластиковые
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Пластиковые стулья
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Уличные диваны
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-kat__item">
+												<div class="menu-kat__image">
+													<img class="menu-kat__img" src="images/pics/catalog_1.jpg" alt="">
+												</div>
+												<div class="menu-kat__col">
+													<a class="menu-kat__tlt" href="#">Садовая мебель</a>
+													<ul class="menu-kat__ul">
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Комплекты садовой мебели
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Столы пластиковые
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Пластиковые стулья
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Уличные диваны
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-kat__item">
+												<div class="menu-kat__image">
+													<img class="menu-kat__img" src="images/pics/catalog_1.jpg" alt="">
+												</div>
+												<div class="menu-kat__col">
+													<a class="menu-kat__tlt" href="#">Садовая мебель</a>
+													<ul class="menu-kat__ul">
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Комплекты садовой мебели
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Столы пластиковые
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Пластиковые стулья
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Уличные диваны
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-kat__item">
+												<div class="menu-kat__image">
+													<img class="menu-kat__img" src="images/pics/catalog_1.jpg" alt="">
+												</div>
+												<div class="menu-kat__col">
+													<a class="menu-kat__tlt" href="#">Садовая мебель</a>
+													<ul class="menu-kat__ul">
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Комплекты садовой мебели
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Столы пластиковые
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Пластиковые стулья
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Уличные диваны
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-kat__item">
+												<div class="menu-kat__image">
+													<img class="menu-kat__img" src="images/pics/catalog_1.jpg" alt="">
+												</div>
+												<div class="menu-kat__col">
+													<a class="menu-kat__tlt" href="#">Садовая мебель</a>
+													<ul class="menu-kat__ul">
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Комплекты садовой мебели
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Столы пластиковые
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Пластиковые стулья
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Уличные диваны
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-kat__item">
+												<div class="menu-kat__image">
+													<img class="menu-kat__img" src="images/pics/catalog_1.jpg" alt="">
+												</div>
+												<div class="menu-kat__col">
+													<a class="menu-kat__tlt" href="#">Садовая мебель</a>
+													<ul class="menu-kat__ul">
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Комплекты садовой мебели
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Столы пластиковые
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Пластиковые стулья
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Уличные диваны
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-kat__item">
+												<div class="menu-kat__image">
+													<img class="menu-kat__img" src="images/pics/catalog_1.jpg" alt="">
+												</div>
+												<div class="menu-kat__col">
+													<a class="menu-kat__tlt" href="#">Садовая мебель</a>
+													<ul class="menu-kat__ul">
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Комплекты садовой мебели
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Столы пластиковые
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Пластиковые стулья
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Уличные диваны
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-kat__item">
+												<div class="menu-kat__image">
+													<img class="menu-kat__img" src="images/pics/catalog_1.jpg" alt="">
+												</div>
+												<div class="menu-kat__col">
+													<a class="menu-kat__tlt" href="#">Садовая мебель</a>
+													<ul class="menu-kat__ul">
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Комплекты садовой мебели
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Столы пластиковые
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Пластиковые стулья
+															</a>
+														</li>
+														<li class="menu-kat__li">
+															<a class="menu-kat__link" href="#">
+																Уличные диваны
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">Компания</a>
+										<ul class="menu__child">
+											<li class="menu__child-item">
+												<a class="menu__child-link" href="#">Товар 1</a>
+											</li>
+											<li class="menu__child-item">
+												<a class="menu__child-link" href="#">Товар 2</a>
+											</li>
+											<li class="menu__child-item">
+												<a class="menu__child-link" href="#">Товар 3</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">Акции</a>
+										<ul class="menu__child">
+											<li class="menu__child-item">
+												<a class="menu__child-link" href="#">Товар 1</a>
+											</li>
+											<li class="menu__child-item">
+												<a class="menu__child-link" href="#">Товар наименование товара</a>
+											</li>
+											<li class="menu__child-item">
+												<a class="menu__child-link" href="#">Товар 3</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">Доставка и оплата</a>
+										<ul class="menu__child">
+											<li class="menu__child-item">
+												<a class="menu__child-link" href="#">Товар 1</a>
+											</li>
+											<li class="menu__child-item">
+												<a class="menu__child-link" href="#">Товар 2</a>
+											</li>
+											<li class="menu__child-item">
+												<a class="menu__child-link" href="#">Товар 3</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">Гарантия и возврат</a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">Вопросы и ответы</a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">Контакты</a>
+									</li>
+								</ul>
+
+								<div class="footer">
+									<div class="xs_flex xs_middle">
+										<a href="tel:88008888888" class="phone">8 800 888 88 88</a>
+										<div class="recall">
+											<a href="#xs_recall" data-theme="Мы вам перезвоним" data-button="Заказать звонок"
+												class="fancybox btn">Заказать звонок</a>
+										</div>
+									</div>
+									<div class="burger-checkin burger-checkin--menu head-top__log xs_flex xs_middle xs_center">
+										<a class="head-top__login head-top__log-link" href="#">
+											Войти
+										</a>
+										<span class="head-top__slash">
+											/
+										</span>
+										<a class="head-top__checkin head-top__log-link" href="#">
+											Регистрация
+										</a>
+									</div>
+									<a href="mailto: mail.ru" class="email"> mail.ru</a>
+									<div class="bottom_line">
+										Copyright © 2019
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</nav>
@@ -883,7 +1214,7 @@
 	<footer class="footer footer-dist">
 		<div class="footer__body">
 			<div class="container">
-				<div class="footer__inner xs_flex">
+				<div class="footer__inner xs_flex xs_wrap">
 					<div class="footer__info">
 						<div class="footer__calls">
 							<div class="footer__calls-wr-phone">
@@ -891,7 +1222,7 @@
 									+7 (800) 000-00-00
 								</a>
 							</div>
-							<a class="footer__calls-order fancybox" href="#xs_recall">
+							<a class="footer__calls-order fancybox" href="#xs_recall" data-button="Заказать звонок">
 								Заказать обратный звонок
 							</a>
 						</div>
@@ -1021,6 +1352,30 @@
 		</div>
 	</footer>
 	<!-- Footer END -->
+
+	<!-- Форма обратной связи START -->
+	<div id="xs_recall" class="hide">
+		<div class="title">Заказ обратного звонка</div>
+		<p class="description">Оставьте свои контактные данные и в ближайшее время мы свяжемся с Вами и ответим на все
+			Ваши вопросы.</p>
+		<form class="xs_send_form" data-yandexid="">
+			<div class="xs_result"></div>
+			<div class="name">Введите ваше имя</div>
+			<input type="text" required name="xs_name" placeholder="Ваше имя" />
+			<div class="name">Телефон для связи</div>
+			<input type="text" required name="xs_phone" placeholder="+7 (___) ___-__-__" />
+			<input type="hidden" name="send_it" value="y" />
+			<input type="hidden" name="xs_theme" value="" />
+			<input type="hidden" name="xs_link" value="" />
+			<div class="policy">
+				<input type="checkbox" id="check1" name="check1" required checked />
+				<label for="check1">Согласен с <a href="http://vizitka.xsite.pro/politika-konfidencialnosti/"
+						target="_blank">политикой конфиденциальности</a></label>
+			</div>
+			<input type="submit" value="Оставить заявку" class="sanding btn" />
+		</form>
+	</div>
+	<!-- Форма обратной связи END -->
 
 	<link rel="stylesheet" href="fonts/fonts.css" />
 	<link rel="stylesheet" href="css/slick.min.css" />

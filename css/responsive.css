@@ -439,6 +439,9 @@
 	.head-mid__push {
 	    margin: 0 0px 0 15px;
 	}
+	.wr-search--dist {
+	    display: block;
+	}
 }
 
 @media screen and (max-width:950px){

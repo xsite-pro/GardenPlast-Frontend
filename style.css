@@ -842,6 +842,9 @@ body.fix .menu {
     position: relative;
     z-index: 990;
 }
+.wr-search--dist {
+    display: none;
+}
 .menu__list {
     position: relative;
     z-index: 1;
