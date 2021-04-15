@@ -554,6 +554,22 @@ jQuery(function($){
 		}); 	
 	}
 
+	// Форма поиска
+	$(document).on('click', '.wr-search .search_link', function(){
+	    $('.search_form').addClass('active')
+	})
+
+	$(document).click(function(event)
+	{
+		if (
+			$(event.target).closest(".wr-search .search_link").length ||
+			$(event.target).closest(".wr-search .input_search").length 
+		) return;
+
+		$('.search_form').removeClass('active')
+
+		event.stopPropagation();
+	})
 
 })
 	

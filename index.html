@@ -33,7 +33,7 @@
 						<a class="head-top__call fancybox" href="#xs_recall" data-button="Заказать звонок">
 							Заказать звонок
 						</a>
-						<div class="head-top__log xs_flex xs_middle xs_center">
+						<div class="burger-checkin head-top__log xs_flex xs_middle xs_center">
 							<a class="head-top__login head-top__log-link" href="#">
 								Войти
 							</a>
@@ -79,7 +79,25 @@
 		</div>
 		<nav class="menu menu--tune">
 			<div class="container">
-				<div class="menu__inner">
+				<div class="menu__inner xs_flex xs_middle">
+
+					<!-- Поиск START -->
+					<div class="wr-search wr-search--dist xs_flex">
+		                <span class="icon zoomer search_link" onclick="jQuery('.search_form').addClass('active').find('input[type=text]').focus()">
+		                </span>
+
+		                <form class="search_form form_search" name="searchForm" method="post" action="">
+		                    <input type="submit" class="zoom">
+		                    <input type="hidden" value="product" name="post_type">
+		                    <input type="text" autocomplete="off" placeholder="Введите текст запроса" name="s" id="s" class="your_latters input_search" value="">
+
+		                    <input type="hidden" name="setsearchdata" value="1">
+		                    <input type="hidden" name="category_id" value="" />
+		                    <input type="hidden" name="search_type" value="" />
+		                </form>
+		            </div>
+		            <!-- Поиск END -->
+
 					<div class="buttonMenu"><span></span></div>
 
 					<div class="menu_container">
@@ -394,6 +412,17 @@
 											<a href="#xs_recall" data-theme="Мы вам перезвоним" data-button="Заказать звонок"
 												class="fancybox btn">Заказать звонок</a>
 										</div>
+									</div>
+									<div class="burger-checkin burger-checkin--menu head-top__log xs_flex xs_middle xs_center">
+										<a class="head-top__login head-top__log-link" href="#">
+											Войти
+										</a>
+										<span class="head-top__slash">
+											/
+										</span>
+										<a class="head-top__checkin head-top__log-link" href="#">
+											Регистрация
+										</a>
 									</div>
 									<a href="mailto: mail.ru" class="email"> mail.ru</a>
 									<div class="bottom_line">
